@@ -21,7 +21,7 @@ const exampleInput = (): RouteInput => ({
   routeName: 'Opción de trabajo de ejemplo', source: '', sourceDate: '', owner: '', confirmed: false,
 });
 
-const money = (value: number) => new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', maximumFractionDigits: 0 }).format(value);
+const money = (value: number) => new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', minimumFractionDigits: 0, maximumFractionDigits: 2 }).format(value);
 const numberValue = (value: string) => value === '' ? 0 : Number(value);
 const labels: Record<RouteResult['status'], string> = {
   DATOS_INCOMPLETOS: 'Faltan datos', NO_DISPONIBLE: 'Aún no disponible',
