@@ -51,6 +51,18 @@ test('fecha futura, antigua o inválida no permite ruta lista', () => {
     input.sourceDate = date; assert.equal(run(input).status, 'PROVISIONAL');
   }
 });
+test('rechaza fechas de mañana según el calendario local, aunque UTC ya haya cambiado de día', (context) => {
+  const oldTimeZone = process.env.TZ;
+  process.env.TZ = 'America/Mexico_City';
+  context.mock.timers.enable({ apis: ['Date'], now: new Date('2026-11-02T03:00:00.000Z') });
+  try {
+    const input = sample(); input.sourceDate = '2026-11-02';
+    assert.equal(evaluateRoute(input).status, 'PROVISIONAL');
+  } finally {
+    if (oldTimeZone === undefined) delete process.env.TZ;
+    else process.env.TZ = oldTimeZone;
+  }
+});
 test('margen suficiente y fuente reciente se presentan como lista para revisar, no verificada', () => {
   const result = run(sample());
   assert.equal(result.status, 'LISTA_PARA_REVISAR');

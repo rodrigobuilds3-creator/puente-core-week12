@@ -12,9 +12,15 @@ A narrow browser view was also inspected: its landing content stacked vertically
 
 The committed source was copied to a clean temporary directory, dependencies were installed from the local npm cache, and `npm run build` completed successfully on 1 November 2026: Next.js compiled, passed TypeScript and generated the static pages. The resulting production server was opened locally; the example again returned “Aún no disponible” with a -$1,260 margin. No public deployment is implied by this local check.
 
+## Public deployment and date-boundary defect
+
+On 1 November 2026 Vercel deployed commit `64f2001` to production at https://puente-core-week12.vercel.app/ (deployment `dpl_2SfzKTCsTFbGuenUjGDWGnA4bte5`). A separate browser session opened the public URL and ran the fictional example, which displayed the expected -$1,260 margin and “Aún no disponible.”
+
+An additional regression test exposed a real date-boundary issue in that first version: at 21:00 in Mexico City on 1 November, UTC had already entered 2 November. The original code used UTC to define “today” and incorrectly accepted a source dated 2 November as current. The test failed with `LISTA_PARA_REVISAR` where `PROVISIONAL` was expected. The fix uses the browser's local calendar date; the same test then passed, as did all 11 engine tests. This is a simulated clock/time-zone test, not a user interview. A second deployment and its public verification must be recorded after they occur.
+
 ## Outstanding checks
 
 - Inspect the application at an actual 360 px viewport and validate the public deployment when it is available.
 - Run the persona exercise on actual screenshots, log its observations, fix the most important issue and retest. No persona observation, user interview or redesign result is claimed in advance.
-- If deployed, record an actual discovered defect, fix, redeploy, deployment URLs and commit hashes. The course requires real evidence of this cycle.
+- Record the actual second deployment, URL and commit hash, then retest the published version.
 - Real demand, a current-month user, the 10:1 comparison, third-party route terms, Vercel deployment and Supabase persistence remain unverified.

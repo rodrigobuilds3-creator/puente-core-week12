@@ -68,6 +68,13 @@ function cleanText(value: unknown): string {
   return typeof value === 'string' && value.length <= 200 ? value.trim() : '';
 }
 
+function localCalendarDate(date: Date): string {
+  const year = String(date.getFullYear()).padStart(4, '0');
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
 function incomplete(reason: string, warnings: string[] = []): RouteResult {
   return {
     status: 'DATOS_INCOMPLETOS',
@@ -116,7 +123,7 @@ export function evaluateRoute(input: RouteInput, today?: string): RouteResult {
   if (retainedHoursWeekly > totalHours) {
     return incomplete('Las horas que planeas conservar no pueden superar las horas de venta registradas.');
   }
-  const currentDay = calendarDay(today ?? new Date().toISOString().slice(0, 10));
+  const currentDay = calendarDay(today ?? localCalendarDate(new Date()));
   if (currentDay === null) return incomplete('No fue posible determinar una fecha válida para la revisión.');
 
   const reserve = Math.min(...positiveNets);
