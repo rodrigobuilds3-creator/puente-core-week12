@@ -17,11 +17,11 @@ A person supported by informal daily work may see an attractive job offer but la
 
 ## 3. Generated design mockup
 
-The following image-generated board is the actual concept image from the Week 4 PUENTE packet, preserved here as a visual reference. Its route labels, figures and any claim of real data are illustrative; Week 12 must not represent the pictured routes as verified, request identity documents, or adopt a calculation without implementing the rules in this packet. It was generated for Week 4, not newly generated in Week 12.
+This Week 12 image-generated concept explores a cobalt and yellow startup identity and a mobile decision view. Its amounts are synthetic, and the screen is a visual concept rather than evidence of a tested workflow. The production flow calculates the full bridge, including reserve, transition costs and any informal income retained; the illustration compares only the initial cash and basic floor.
 
-![Previously generated PUENTE concept board with synthetic mobile screens](assets/puente-week4-generated-reference.png)
+![Week 12 PUENTE concept showing a simulated cash comparison](assets/puente-week12-mockup.png)
 
-A newly generated Week 12 mockup remains to be produced if the instructor requires a new image specifically for this week's packet.
+The earlier [Week 4 concept board](assets/puente-week4-generated-reference.png) is preserved for reference.
 
 ## 4. Deterministic flow
 
