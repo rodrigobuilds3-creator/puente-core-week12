@@ -4,7 +4,7 @@
 
 `npm test` ran on 1 November 2026: 10 tests passed, 0 failed. The tests cover minimum and maximum log length, the lowest positive reserve in the presence of a zero-net day, negative and zero-net logs, a positive household floor, daily hours, lost-hours bounds, negative bridge precedence, missing and stale evidence, human-confirmed review status, and the no-double-counting rule for retained income.
 
-`tsc --noEmit --pretty false` passed on 1 November 2026 using the installed TypeScript dependencies. The UI was also bundled with esbuild as a preliminary syntax check. This is not a substitute for browser interaction testing.
+`tsc --noEmit --pretty false` passed on 1 November 2026 using the installed TypeScript dependencies. The UI was bundled with esbuild and rendered once to HTML with React server rendering; the headline, form, action and five daily records were present. This is not a substitute for browser interaction testing.
 
 ## Outstanding checks
 

@@ -118,6 +118,6 @@ Never embed keys in source or client bundles. Validate every input; if storing p
 
 ## 11. Delivery and open checks
 
-The course calls for a real domain, live URL and GitHub link, `DEMO_yourname.mp4`, `PACKET_yourname.pdf`, `PERSONA_yourname.pdf` and `BUILDCHAT_yourname.pdf`, including a real test-fix-redeploy history. Verify the current Brightspace requirements and the Team Blueprint conditions before submission. Record actual project choices, commits, deploys and outcomes; do not invent them. The real-user gate, 10:1 evidence, team confirmation, simulated-persona test, any newly required Week 12 mockup, deployment and video remain to be established.
+The course calls for a real domain, live URL and GitHub link, `DEMO_yourname.mp4`, `PACKET_yourname.pdf`, `PERSONA_yourname.pdf` and `BUILDCHAT_yourname.pdf`, including a real test-fix-redeploy history. Verify the current Brightspace requirements and the Team Blueprint conditions before submission. Record actual project choices, commits, deploys and outcomes; do not invent them. The real-user gate, 10:1 evidence, team confirmation, simulated-persona test, deployment and video remain to be established.
 
 **Sources:** prior Week 4 [product packet](../../../../semana_04_when_the_tutor_knows_your_child_better_than_you_do/03_business_bending/puente-w4/site/docs/PACKET.md), the Week 12 Method/Verdict materials, [MySkillsFuture](https://www.myskillsfuture.gov.sg/csp), and [Portal del Empleo](https://www.empleo.gob.mx/jobs). Any date-based availability must be rechecked before a real handoff.
