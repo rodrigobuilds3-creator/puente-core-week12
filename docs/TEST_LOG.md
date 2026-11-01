@@ -10,10 +10,11 @@ On 1 November the React component was also inspected in a local browser preview 
 
 A narrow browser view was also inspected: its landing content stacked vertically and the calculator was readable. The requested 360 px override yielded a reported 400 px inner width in this environment, so exact 360 px behavior remains unverified.
 
+The committed source was copied to a clean temporary directory, dependencies were installed from the local npm cache, and `npm run build` completed successfully on 1 November 2026: Next.js compiled, passed TypeScript and generated the static pages. The resulting production server was opened locally; the example again returned “Aún no disponible” with a -$1,260 margin. No public deployment is implied by this local check.
+
 ## Outstanding checks
 
-- Complete a Next.js production build and record its actual result.
-- Inspect the application at a 360 px viewport and repeat the checks against the production build when it is available.
+- Inspect the application at an actual 360 px viewport and validate the public deployment when it is available.
 - Run the persona exercise on actual screenshots, log its observations, fix the most important issue and retest. No persona observation, user interview or redesign result is claimed in advance.
 - If deployed, record an actual discovered defect, fix, redeploy, deployment URLs and commit hashes. The course requires real evidence of this cycle.
 - Real demand, a current-month user, the 10:1 comparison, third-party route terms, Vercel deployment and Supabase persistence remain unverified.
