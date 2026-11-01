@@ -8,11 +8,11 @@ This is a synthetic-data prototype. Luis, the route terms and the interview scen
 
 The calculation accepts five to seven daily records, protects a 14-day household floor and the lowest positive-day reserve, estimates retained informal income, and subtracts transition costs. It keeps cash viability separate from route evidence. Future formal wages do not pay the bridge, and lost income is not deducted twice. People review and decide.
 
-Results can be saved **only on the current browser** or downloaded as JSON. The present implementation has no account, remote persistence or Supabase connection, and is not intended for real personal or financial data. A real deployment handling personal data would require explicit consent, authentication, user-owned row isolation, deletion controls and a completed security review.
+Results can be saved **only on the current browser** or downloaded as JSON. A read-only Supabase table supplies a curated fictional example; no visitor entries or calculation results are sent to the database. If the example service is unavailable, the app loads a local fallback and says so. The prototype has no account or server-side persistence of visitor inputs and is not intended for real personal or financial data. A real deployment handling personal data would require explicit consent, authentication, user-owned row isolation, deletion controls and a completed security review.
 
 ## Run locally
 
-Node.js 22.13 or newer is required. Install the pinned dependencies with `npm ci`, then run `npm run dev`. `npm test` runs the deterministic rules tests. `npm run build` creates a Next.js production build. Screenshots and deploys should be documented only after they happen.
+Node.js 22.13 or newer is required. Install the pinned dependencies with `npm ci`, then run `npm run dev`. `npm test` runs the deterministic rules tests. `npm run build` creates a Next.js production build. To read the fictional example from Supabase, configure server environment variables `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY`; otherwise the local fallback works. Never use a service-role or secret key for this integration.
 
 ## Product and evidence
 
@@ -22,4 +22,4 @@ Node.js 22.13 or newer is required. Install the pinned dependencies with `npm ci
 - [Actual validation log](docs/TEST_LOG.md)
 - [Demo guide](docs/DEMO_GUIDE.md)
 
-The Week 12 assignment also asks for GitHub, Vercel, Supabase and a working venture domain. Their configuration and any deployment must be checked separately; a local codebase is not proof of those requirements.
+The application is published at https://puente-core-week12.vercel.app/. Whether a free Vercel subdomain satisfies the course's domain requirement must be checked separately. The synthetic example is not a substitute for real-user or 10:1 validation.
