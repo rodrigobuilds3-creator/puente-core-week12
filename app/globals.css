@@ -1,4 +1,5 @@
-@import "tailwindcss";
+@import "tailwindcss" source(none);
+@source "./";
 
 :root { --ink:#102753; --blue:#2257e9; --dark:#1233a7; --yellow:#ffd044; --cream:#f7f8fc; --muted:#62718d; }
 * { box-sizing:border-box; }
