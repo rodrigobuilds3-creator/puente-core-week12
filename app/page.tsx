@@ -36,6 +36,7 @@ export default function Home() {
   const [input, setInput] = useState<RouteInput>(initialInput);
   const [result, setResult] = useState<RouteResult | null>(null);
   const [notice, setNotice] = useState('');
+  const [exampleNotice, setExampleNotice] = useState('');
   const [loadingExample, setLoadingExample] = useState(false);
 
   function update<K extends keyof RouteInput>(key: K, value: RouteInput[K]) {
@@ -52,14 +53,15 @@ export default function Home() {
   }
   async function loadExample() {
     setLoadingExample(true);
+    setExampleNotice(''); setNotice('');
     try {
       const response = await fetch('/api/ejemplo', { cache: 'no-store', signal: AbortSignal.timeout(6000) });
       if (!response.ok) throw new Error('example unavailable');
       const data = await response.json() as { input: RouteInput };
       if (!evaluateRoute(data.input).inputValid) throw new Error('invalid example');
-      setInput(data.input); setResult(null); setNotice('Cargamos un ejemplo ficticio de la base de datos. Puedes cambiarlo.');
+      setInput(data.input); setResult(null); setExampleNotice('Ejemplo cargado. Revisa los valores y continúa.');
     } catch {
-      setInput(exampleInput()); setResult(null); setNotice('Cargamos un ejemplo ficticio de respaldo en este navegador.');
+      setInput(exampleInput()); setResult(null); setExampleNotice('Ejemplo cargado. Revisa los valores y continúa.');
     } finally {
       setLoadingExample(false);
     }
@@ -83,7 +85,7 @@ export default function Home() {
   }
   function clear() {
     try { localStorage.removeItem('puente-week12-example'); } catch { /* Browser may block local storage. */ }
-    setInput(initialInput()); setResult(null); setNotice('Se borró el ejemplo guardado en este navegador.');
+    setInput(initialInput()); setResult(null); setExampleNotice(''); setNotice('Se borró el ejemplo guardado en este navegador.');
   }
   function download() {
     if (!result || !result.inputValid) return;
@@ -129,7 +131,7 @@ export default function Home() {
 
       <section className="tool-section" id="calculadora">
         <div className="wrap tool-intro"><div><span className="eyebrow"><span className="mini-spark">✳</span> TU PUNTO DE PARTIDA</span><h2>Hagamos espacio<br/><span>para tu próximo paso.</span></h2></div><p>Vamos por partes. Necesitas entre cinco y siete días de ventas para estimar tu ingreso y una reserva.</p></div>
-        <div className="wrap demo-banner"><span className="demo-label">MODO DEMO</span><p>Esta versión es un ejercicio con datos ficticios. No ingreses nombres, documentos ni información financiera real.</p><button type="button" onClick={loadExample} disabled={loadingExample}>{loadingExample ? 'Cargando ejemplo…' : 'Cargar ejemplo'} <Arrow /></button></div>
+        <div className="wrap demo-banner"><span className="demo-label">MODO DEMO</span><p>Esta versión es un ejercicio con datos ficticios. No ingreses nombres, documentos ni información financiera real.</p><button type="button" onClick={loadExample} disabled={loadingExample}>{loadingExample ? 'Cargando ejemplo…' : 'Cargar ejemplo'} <Arrow /></button><p className="demo-feedback" role="status" aria-live="polite">{exampleNotice}</p></div>
 
         <div className="wrap workspace">
           <div className="workspace-main">
