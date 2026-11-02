@@ -1,24 +1,20 @@
-# Synthetic persona test plan
+# Synthetic persona test
 
-**Status: planned, not run.** The course requires a fresh synthetic-persona conversation with screenshots of the actual screens, a log of confusion, and a fix and retest of the worst issue. The local browser preview has not yet been authorized, so no screenshot, confusion, fix or retest is claimed.
+**Status: completed 1 November 2026.** The full role-play and screenshots are in `PERSONA_Rodrigo_Pena.pdf` and `PERSONA_SIMULADA_CONVERSACION.md`. This was a fresh-chat AI role-play with fictional Luis, as required by the course. It is a design review, not a real interview or evidence of adoption.
 
-## Persona prompt for the fresh conversation
+## Procedure and scope
 
-> You are Luis, a fictional person working irregular hours and considering a job with uncertain first-pay timing. You use a phone and want to protect essential household costs. You are not a real interview participant. I will show actual screenshots of a Spanish-language prototype one screen at a time. Explain what you think the screen means, what you would tap or enter, where you are uncertain, and when you would stop. Do not infer hidden functionality. Ask me for the next screenshot after each step.
+The persona received four actual mobile screenshots in order: landing page, start of the calculator, fictional example loaded, and result before the copy fix. For each screen, the persona described its interpretation, likely next action and uncertainty. The exercise tested what was visible in those screenshots; it did not claim to exercise hidden controls or represent every screen in the full flow.
 
-## Screens and tasks
+## Observations and fixes
 
-1. Landing page: identify what PUENTE does and find how to start.
-2. Demo banner and essentials: explain which values are fictional and where to enter cash and weekly expenses.
-3. Selling days: enter or inspect five to seven days, including costs and hours; explain what a day with a loss means.
-4. Route details: identify transition costs, retained hours, source, date and human confirmation.
-5. Result: describe the protected floor, reserve, margin, reason and next action; distinguish a provisional route from a verified opportunity.
-6. Save and restore: explain where the record is stored and recover or delete the example.
-
-## Log to complete after the exercise
-
-| Screen | What the synthetic persona actually said | Confusion / severity | Change made | Retest outcome |
+| Screen | Observation from the synthetic role-play | Severity | Change | Retest |
 |---|---|---|---|---|
-| Pending | Pending | Pending | Pending | Pending |
+| Landing | “Cuida tu piso” is metaphorical; the two start links may appear to be different paths. | Low | No change recorded. | Not retested. |
+| Calculator start | “Días de ventas” may not include another kind of irregular income; the prompt does not explain what records to prepare. | Medium | No change recorded. | Not retested. |
+| Example loaded | The changed cash value is visible, but the confirmation was far from the button and did not show all loaded assumptions. | Medium | Confirmation moved beside “Cargar ejemplo.” | Public flow reopened after deployment; confirmation visible beside the control. |
+| Result | “Aún no disponible” could describe the job rather than the financial result; the shortfall was not visible in the screenshot. | High | Status changed to “No alcanza por ahora” and the MXN 1,260 shortfall became explicit. | Public flow reopened after deployment; status and amount visible. |
 
-Keep the full generated exchange and screenshots. Apply the most important fix to the actual app, rerun the relevant checks, and document the real result. Synthetic persona feedback is a design review; it is not evidence of a real interview or adoption.
+## Retest record and limits
+
+The corrected flow was checked on the published app with the fictional example. Its result remained a -MXN 1,260 margin, the new status explained the cash constraint, and the example confirmation appeared beside its control. The 13 automated tests passed. The assistant performed this retest; it was not a second independent participant test. One synthetic persona and four screenshots do not establish demand, accessibility for all users, employment outcomes or a 10:1 advantage.

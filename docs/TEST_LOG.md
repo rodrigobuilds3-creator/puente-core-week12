@@ -24,6 +24,14 @@ On 1 November a dedicated project quoted at $0 per month was created with the ac
 
 ## Outstanding checks
 
-- Inspect the application at an actual 360 px viewport and validate the public deployment when it is available.
-- Run the persona exercise on actual screenshots, log its observations, fix the most important issue and retest. No persona observation, user interview or redesign result is claimed in advance.
+- Obtain instructor confirmation that the live Vercel hostname satisfies the venture-domain requirement, or connect a venture-owned domain.
+- The synthetic-persona exercise and retest are complete; see `PERSONA_TEST_PLAN.md`. Do not treat that role-play as a real-user interview.
 - Real demand, a current-month user, the 10:1 comparison and third-party route terms remain unverified. Server-side persistence of visitor inputs is not implemented.
+
+## Fresh delivery check — 1 November 2026
+
+- `npm test` in the repository checkout passed all 13 tests (0 failures).
+- A direct `npm run build` from this checkout failed while Webpack tried to read a dependency through `node_modules`, which is a symlink into the Week 4 project. The source itself was then archived at `HEAD` into an isolated temporary directory, dependencies were installed with `npm ci --offline`, and `npm run build` completed successfully there. This distinguishes the checkout's dependency-link problem from the clean production build.
+- The public URL was opened in a separate browser session. PUENTE's landing page and calculator loaded, and the fictional-data notice was visible. No personal financial data was entered.
+- The final demo file is 3:39 in 1920 × 1080 and contains a separate audio track. The voice is synthetic and the demonstration figures remain fictional.
+- The free Vercel hostname is live. A venture-owned custom domain has not been connected; verify whether the instructor accepts the Vercel hostname before treating the domain condition as complete.
