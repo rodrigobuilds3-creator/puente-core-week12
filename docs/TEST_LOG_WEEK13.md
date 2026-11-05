@@ -31,3 +31,11 @@ URL: http://127.0.0.1:3013 . These are local checks, not a public deployment.
 Publication was stopped by automatic approval review for the external Git push. No Week 13 preview or production deployment is claimed. Repeat affected tasks with real participants after deployment; technical text/layout checks do not establish a human comprehension gain. Three initial participants expressed verbal intent; no subsequent return artifact was supplied.
 
 Next move: obtain explicit authorization to push this branch to the existing GitHub repository, verify the preview deployment, repeat T3/T4 and capture an actual return signal. The course's real-domain requirement, two deployments, recordings and final build transcript still need completion.
+
+## 2026-11-05 independent visual persona correction
+
+Fresh chat: 01a1acac-4b57-75b1-975d-b471370eb22c. Ten ordered screenshots; immediate reactions saved before the next image. Fictional AI persona, no human actions or time measurements. Principal finding: ambiguous period and deductions in the margin explanation.
+
+Pre-code packet commit: e6e6d79. Added plain-language 14-day explanation, substituted equation and one-time reserve wording. No engine change. Existing 19 tests passed; optimized Next.js build and TypeScript passed in the clean runtime. Fixtures remain -1260 at cash 1800 and +240 at cash 3300, with the latter still provisional.
+
+Historical note: the prior Week 13 implementation through 4c80586 was pushed and published November 4; earlier pending authorization statements are historical, not the current publication state. See delivery evidence for deployment and visual retest results.

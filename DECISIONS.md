@@ -23,3 +23,9 @@ Prioritize the provisional-result hierarchy. Show evidence uncertainty before ma
 
 Nineteen tests pass and the isolated production build succeeds. Local mobile checks verify the revised provisional state, save/restore, empty-field handling and canceling deletion. A downloaded technical event log was inspected. Publication requires authorization following automatic review rejection; no deployment is claimed. Next action: approved push, preview verification, then real-user T3/T4 retest and actual return evidence. See docs/TEST_LOG_WEEK13.md.
 
+
+## 2026-11-05 publication and independent persona update
+
+The Week 13 correction was already pushed through commit 4c80586 and published to the existing production Vercel project on November 4. Earlier authorization-pending entries describe the historical state before that publication.
+
+A separate fresh-chat visual persona identified difficulty reconstructing the 14-day margin. PACKET_PERSONA_WEEK13.md records the plan before this follow-up implementation. The copy now states the period, one-time reserve deduction and substituted equation; the deterministic engine is unchanged. This synthetic inspection does not establish human comprehension or participant return.
