@@ -15,3 +15,11 @@
 - The synthetic persona test is documented separately with ordered product screenshots, confusion points, the copy/result fix and a retest. It is a required design exercise, not real-user research.
 - Prototype-level shadow clause: fictional examples are labeled; missing or unverified route evidence is not presented as verified; the person may correct the inputs and keeps the fallback and decision. The Blueprint's real-workaround, named-owner, payer/acceptor/capacity and team-confirmation conditions remain open until evidenced.
 - Tomorrow's first move: confirm that the instructor accepts `puente-core-week12.vercel.app` as the venture's real URL, or connect a venture-owned domain before submission.
+# Week 13 session close November 4 2026
+
+Rodrigo supplied PUENTE_W13.pdf and explicitly confirmed five real sessions. Use that report as the current research source, superseding earlier uploads. Keep human observations, technical checks and the hypothetical Luis economic model distinct.
+
+Prioritize the provisional-result hierarchy. Show evidence uncertainty before margin, explain zero retained hours separately from recorded net, and distinguish loading a demo from restoring a saved record. Preserve the original engine outputs and browser-local storage key. Empty numeric input now maps to an invalid number, not zero. Clearing requires explicit confirmation; editing displays a recalculation notice. Optional feedback stays in memory, opt-in, bounded and allowlisted, with voluntary export and no financial payloads.
+
+Nineteen tests pass and the isolated production build succeeds. Local mobile checks verify the revised provisional state, save/restore, empty-field handling and canceling deletion. A downloaded technical event log was inspected. Publication requires authorization following automatic review rejection; no deployment is claimed. Next action: approved push, preview verification, then real-user T3/T4 retest and actual return evidence. See docs/TEST_LOG_WEEK13.md.
+

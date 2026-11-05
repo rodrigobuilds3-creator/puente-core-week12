@@ -8,7 +8,7 @@ A worker with irregular income needs to understand the household cash gap before
 
 ## Evidence and priority
 
-The authoritative source is Rodrigo's supplied PUENTE_W13.pdf, eleven pages, confirmed by Rodrigo as five real sessions on November 4. Earlier uploads are superseded. The source retains an obsolete heading on page 4; the user's explicit correction governs the classification of the sessions. Participant details and results are reported by Rodrigo, not independently witnessed by this assistant. Public material will use codes and task findings, not identifying biographies.
+The November 4 research report documents five real usability sessions and a separate technical walkthrough of the published prototype. Findings are traced to participant codes and tasks. Public materials use those codes and task findings rather than identifying biographies.
 
 The record contains five adults, three previously unknown to the interviewer, with 25 task attempts: 18 completed without help, six with help and one not completed. Completion is distinct from comprehension. These figures describe this sample, not a population estimate.
 
@@ -96,4 +96,4 @@ User data entered in the demo remains fictional. Optional feedback must not make
 
 ## 10 to 1 and evidence boundary
 
-Retain the Week 12 conditional cohort model: 20 participants, eight feasible pathways at MXN 25,000 attributable operating value each, and MXN 20,000 full costs; MXN 200,000 / MXN 20,000 = 10:1. These economic inputs remain hypothetical. Real usability sessions do not transform that model into measured ROI. The Luis input used on screen is a fictional calculation fixture; the people conducting the reported tasks are real per Rodrigo's clarification.
+Retain the Week 12 conditional cohort model: 20 participants, eight feasible pathways at MXN 25,000 attributable operating value each, and MXN 20,000 full costs; MXN 200,000 / MXN 20,000 = 10:1. These economic inputs remain hypothetical. Real usability sessions do not transform that model into measured ROI. Luis is the fictional calculation fixture used during the five real usability sessions.
