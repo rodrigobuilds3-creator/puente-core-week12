@@ -39,3 +39,9 @@ Rodrigo confirmed no prospective sponsor contact is available. Next evidence: lo
 
 Tomorrow's first move: publish the reviewed branch when authorized, verify the exact live domain, then perform the independent visual test and a corrective redeploy if a real issue is found. Preserve the actual development conversation.
 
+# Publication completed - Week 14 - 13 November 2026
+
+Rodrigo explicitly authorized the GitHub push and Vercel release. Branch codex/puente-week14 is published; application commit 4c6c1406f375558f72436c58c538f5b46f157602. Preview F7rYDhN5N2ykPwVtYVHaVUnJ8YsG and production 67oGkVrh6WXvYyDtB3jPv7QjKSje both Ready. Main URL https://puente-core-week12.vercel.app/pricing ; memo /about. Verified production save/reload/two scenarios/exact memo and worker -1260/+240 results. Separate browser context opened pricing and memo without Vercel owner authentication. No protections, auth settings, env vars or database policies were changed. No Brightspace submission.
+
+The earlier session-close publication-pending statement is superseded. Complete release IDs, test details and remaining evidence are recorded in docs/DEPLOYMENTS_WEEK14.md. Next action: obtain a real sponsor conversation when a contact exists, perform independent fresh visual PERSONA, preserve actual full chat exports and record videos. Domain-owning requirement still needs clarification; do not claim a custom domain. Successful release does not prove demand or 10:1.
+
