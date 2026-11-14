@@ -112,7 +112,7 @@ export default function Home() {
   return <>
     <header className="site-header">
       <a className="brand" href="#inicio" aria-label="PUENTE, inicio"><span className="brand-symbol" aria-hidden="true"><i/><i/><i/></span><span>puente<span className="brand-dot">.</span></span></a>
-      <nav aria-label="Principal"><a href="#como-funciona">Cómo funciona</a><a href="#calculadora">Tu cálculo</a></nav>
+      <nav aria-label="Principal"><a href="#como-funciona">Cómo funciona</a><a href="#calculadora">Tu cálculo</a><a href="/pricing">Patrocinar acceso</a><a href="/about">Nuestro método</a></nav>
       <a className="nav-cta" href="#calculadora">Empezar <Arrow diagonal /></a>
     </header>
 
@@ -176,6 +176,6 @@ export default function Home() {
       <FeedbackPanel feedback={feedback} />
       <section className="closing"><div className="wrap closing-inner"><div><span className="eyebrow light">TU CAMINO, TUS REGLAS</span><h2>No tienes que decidir<br/><em>a ciegas.</em></h2></div><a className="button yellow" href="#calculadora">Revisar mi ruta <Arrow diagonal /></a></div></section>
     </main>
-    <footer className="wrap site-footer"><a className="brand" href="#inicio"><span>puente<span className="brand-dot">.</span></span></a><p>Una idea para dar el siguiente paso con claridad.</p><span>PROTOTIPO · DATOS FICTICIOS</span></footer>
+    <footer className="wrap site-footer"><a className="brand" href="#inicio"><span>puente<span className="brand-dot">.</span></span></a><p>Una idea para dar el siguiente paso con claridad. <a href="/pricing">Acceso patrocinado</a> · <a href="/about">Nuestro método</a></p><span>PROTOTIPO · DATOS FICTICIOS</span></footer>
   </>;
 }
