@@ -142,6 +142,9 @@ h1 span { color:var(--blue); }
 .sponsor-shell button:focus-visible,.sponsor-shell a:focus-visible,.sponsor-shell summary:focus-visible { outline:3px solid #6b8df7; outline-offset:4px; }
 .memo-link { color:#244cc0; font-size:13px; font-weight:800; }
 .sponsor-notice { color:#1e4e99; font-size:13px; margin-top:20px; min-height:20px; }
+.sponsor-unsaved { position:fixed; z-index:20; left:5%; right:5%; bottom:20px; max-width:700px; margin:auto; padding:22px; border:2px solid #b57a20; border-radius:10px; background:#fff5d8; color:#49370e; box-shadow:0 8px 45px #14295033; }
+.sponsor-unsaved p { font-size:13px; margin-top:7px; }
+.sponsor-unsaved .sponsor-actions { margin-top:12px; }
 .scenario-list { margin-top:10px; }
 .scenario-list article { display:flex; gap:14px; align-items:center; flex-wrap:wrap; border-top:1px solid #dde5f2; padding:20px 0; }
 .scenario-list article>div { flex:1; min-width:180px; }

@@ -16,10 +16,14 @@ export default function Pricing() {
   const [notice,setNotice]=useState('');
   const [dirty,setDirty]=useState(false);
   const [confirmDelete,setConfirmDelete]=useState<string|null>(null);
+  const [pending,setPending]=useState<{kind:'open';row:SponsorScenario}|{kind:'plan';id:string}|null>(null);
   const r=calculateSponsorship(s.input);
-  const errors=r.errors;
+  const errors:Partial<Record<SponsorField,string>>=r.errors;
   function update(key:SponsorField,raw:string){s.setInput(i=>({...i,[key]:raw.trim()===''?NaN:Number(raw)}));setDirty(true);setNotice('');}
-  function choosePlan(id:string){s.setInput(planInput(id));s.setSelectedId(null);s.setName(id==='program'?'Programa ficticio':'Piloto ficticio');setDirty(true);setNotice('Ejemplo cargado. Los costos no están medidos y no hay patrocinio confirmado.');}
+  function choosePlan(id:string,discard=false){
+    if(dirty&&!discard){setPending({kind:'plan',id});return;}
+    setPending(null);s.setInput(planInput(id));s.setSelectedId(null);s.setName(id==='program'?'Programa ficticio':'Piloto ficticio');setDirty(true);setNotice('Ejemplo cargado. Los costos no están medidos y no hay patrocinio confirmado.');
+  }
   function save(asCopy=false){
     if(!r.ok){setNotice('Corrige los campos marcados antes de guardar.');return;}
     if(!s.name.trim()||s.name.trim().length>40){setNotice('Escribe un nombre ficticio de 1 a 40 caracteres.');return;}
@@ -34,7 +38,10 @@ export default function Pricing() {
       setNotice('Escenario guardado solo en este navegador, dispositivo y dirección. Sin cuenta ni sincronización.');
     }catch {setNotice('No pudimos guardar. Conserva tus cambios descargando el escenario; no se confirmó ningún guardado.');}
   }
-  function open(row:SponsorScenario){s.setInput({...row.input});s.setName(row.name);s.setSelectedId(row.id);setDirty(false);setConfirmDelete(null);setNotice(`Abrimos ${row.name}. Puedes editar y recalcular.`);}
+  function open(row:SponsorScenario,discard=false){
+    if(dirty&&!discard){setPending({kind:'open',row});return;}
+    setPending(null);s.setInput({...row.input});s.setName(row.name);s.setSelectedId(row.id);setDirty(false);setConfirmDelete(null);setNotice(`Abrimos ${row.name}. Puedes editar y recalcular.`);
+  }
   function remove(id:string){
     try {
       const next=readSponsorScenarios(localStorage.getItem(SPONSOR_STORAGE_KEY)).filter(v=>v.id!==id);
@@ -81,5 +88,6 @@ export default function Pricing() {
       <div className="scenario-list">{s.scenarios.map(row=><article key={row.id}><div><h3>{row.name}</h3><p>{row.input.participants} personas · {row.input.months} meses · {new Date(row.savedAt).toLocaleString('es-MX')}</p></div><button onClick={()=>open(row)}>Abrir {row.name}</button>{confirmDelete===row.id?<><button onClick={()=>remove(row.id)}>Confirmar eliminación</button><button onClick={()=>setConfirmDelete(null)}>Cancelar</button></>:<button onClick={()=>setConfirmDelete(row.id)}>Eliminar</button>}</article>)}</div>
     </section>
     <section className="sponsor-independence"><span className="sponsor-kicker">LA CONDICIÓN DEL PATROCINIO</span><h2>Financiar acceso<br/>no compra una decisión.</h2><p>El patrocinador puede recibir una evaluación agregada del programa. No puede cambiar el cálculo, esconder advertencias ni obtener automáticamente registros individuales. No prometemos empleo ni seguridad garantizada.</p><a href="/about">Leer el método y el memo 10:1 →</a></section>
+    {pending&&<div className="sponsor-unsaved" role="alert"><strong>Tienes cambios sin guardar.</strong><p>El otro escenario reemplazaría los valores que estás editando. ¿Quieres conservarlos?</p><div className="sponsor-actions"><button autoFocus onClick={()=>{setPending(null);setNotice('Conservamos tus cambios. Guárdalos o descarga los supuestos antes de cambiar.');}}>Conservar mis cambios</button><button onClick={()=>{if(pending.kind==='open')open(pending.row,true);else choosePlan(pending.id,true);}}>Descartar cambios y continuar</button></div></div>}
     </main><SponsorFooter/></div>;
 }
