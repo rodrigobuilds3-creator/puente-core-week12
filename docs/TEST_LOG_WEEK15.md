@@ -10,3 +10,7 @@ November 22, 2026. User requested continuation with an explicitly Spanish public
 - Only static campaign files, a /campana redirect and discoverability links are added to this app. Cash/sponsorship engines, storage keys and database configuration are unchanged.
 
 The isolated production build and browser release verification are recorded at session close. Preview and production status are not assumed from a commit or push. No payer interview, audience test, outreach or funding commitment is claimed.
+
+## Release verification
+
+Vercel preview gDZwuQ69Cvs6EbShkk1crs16nncB: Ready, 31 seconds, exact source b891e65. Spanish desktop/mobile page, example B (+MXN240 provisional), carousel and Spanish pilot download verified. Local isolated build stalled and was canceled; no local build success is claimed. Production promotion was rejected by automatic approval review because explicit user approval is still needed; no production promotion was performed.
