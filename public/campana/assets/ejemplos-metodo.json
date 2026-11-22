@@ -1,0 +1,128 @@
+{
+  "tipo": "Ejemplos ficticios; no son evidencia de usuarios",
+  "fecha_revision": "2026-11-22",
+  "horizonte_dias": 14,
+  "fecha_primer_pago": "Debe confirmarse fuera del demo",
+  "ejemplos": [
+    {
+      "nombre": "Ejemplo A",
+      "efectivo_disponible": 1800,
+      "gasto_esencial_semanal": 1200,
+      "costos_transicion": 450,
+      "registros": [
+        {
+          "ventas": 480,
+          "reposicion": 200,
+          "traslado": 30,
+          "otros": 10,
+          "horas": 6
+        },
+        {
+          "ventas": 460,
+          "reposicion": 190,
+          "traslado": 30,
+          "otros": 10,
+          "horas": 6
+        },
+        {
+          "ventas": 500,
+          "reposicion": 220,
+          "traslado": 30,
+          "otros": 10,
+          "horas": 6
+        },
+        {
+          "ventas": 430,
+          "reposicion": 180,
+          "traslado": 30,
+          "otros": 10,
+          "horas": 6
+        },
+        {
+          "ventas": 470,
+          "reposicion": 190,
+          "traslado": 30,
+          "otros": 10,
+          "horas": 6
+        }
+      ],
+      "horas_informales_conservadas_por_semana": 0,
+      "resultado": {
+        "estado": "NO_DISPONIBLE",
+        "explicacion": "La caja estimada no alcanza para cubrir el mínimo de 14 días, la reserva y los costos de transición.",
+        "gasto_esencial_14_dias": 2400,
+        "reserva": 210,
+        "monto_protegido": 2610,
+        "ingreso_conservado": 0,
+        "margen": -1260,
+        "advertencias": [
+          "La estimación supone que los días registrados representan una semana de trabajo.",
+          "El ingreso informal conservado es una proyección; el salario futuro no financia el puente."
+        ]
+      }
+    },
+    {
+      "nombre": "Ejemplo B",
+      "efectivo_disponible": 3300,
+      "gasto_esencial_semanal": 1200,
+      "costos_transicion": 450,
+      "registros": [
+        {
+          "ventas": 480,
+          "reposicion": 200,
+          "traslado": 30,
+          "otros": 10,
+          "horas": 6
+        },
+        {
+          "ventas": 460,
+          "reposicion": 190,
+          "traslado": 30,
+          "otros": 10,
+          "horas": 6
+        },
+        {
+          "ventas": 500,
+          "reposicion": 220,
+          "traslado": 30,
+          "otros": 10,
+          "horas": 6
+        },
+        {
+          "ventas": 430,
+          "reposicion": 180,
+          "traslado": 30,
+          "otros": 10,
+          "horas": 6
+        },
+        {
+          "ventas": 470,
+          "reposicion": 190,
+          "traslado": 30,
+          "otros": 10,
+          "horas": 6
+        }
+      ],
+      "horas_informales_conservadas_por_semana": 0,
+      "resultado": {
+        "estado": "PROVISIONAL",
+        "explicacion": "El margen estimado no es negativo, pero faltan datos actuales o confirmación humana de la ruta.",
+        "gasto_esencial_14_dias": 2400,
+        "reserva": 210,
+        "monto_protegido": 2610,
+        "ingreso_conservado": 0,
+        "margen": 240,
+        "advertencias": [
+          "La estimación supone que los días registrados representan una semana de trabajo.",
+          "El ingreso informal conservado es una proyección; el salario futuro no financia el puente.",
+          "Ninguna ruta se verifica automáticamente por tener margen suficiente."
+        ]
+      }
+    }
+  ],
+  "limites": [
+    "No verifica empleadores ni ofertas",
+    "No garantiza empleo, ingresos ni apoyo económico",
+    "No hay financiamiento institucional confirmado"
+  ]
+}

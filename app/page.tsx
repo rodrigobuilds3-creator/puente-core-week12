@@ -123,7 +123,7 @@ export default function Home() {
           <h1>Da el salto.<br/><span>Cuida tu piso.</span></h1>
           <p className="hero-lead">Una nueva oportunidad se ve diferente cuando sabes con cuánto cuentas. Haz las cuentas para tus próximos 14 días.</p>
           <div className="hero-actions"><a className="button primary" href="#calculadora">Explorar mi ruta <Arrow diagonal /></a><a className="text-link" href="#como-funciona">Así funciona <span>↓</span></a></div>
-          <p className="hero-note"><span className="tiny-mark">●</span> Tus números, tu decisión.</p>
+          <p className="hero-note"><a href="/campana" style={{textDecoration:'underline',textUnderlineOffset:4}}>Antes del primer pago: revisa qué falta confirmar</a></p>
         </div>
         <div className="hero-visual" aria-label="Ilustración sobre dar un siguiente paso">
           <img src="/puente-hero.png" alt="Ilustración de personas cruzando un puente hacia nuevas oportunidades" />
