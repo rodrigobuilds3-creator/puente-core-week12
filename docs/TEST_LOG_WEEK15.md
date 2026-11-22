@@ -14,3 +14,8 @@ The isolated production build and browser release verification are recorded at s
 ## Release verification
 
 Vercel preview gDZwuQ69Cvs6EbShkk1crs16nncB: Ready, 31 seconds, exact source b891e65. Spanish desktop/mobile page, example B (+MXN240 provisional), carousel and Spanish pilot download verified. Local isolated build stalled and was canceled; no local build success is claimed. Production promotion was rejected by automatic approval review because explicit user approval is still needed; no production promotion was performed.
+
+
+## Final production release · November 22
+
+User authorized publication and verification-mail access. Identity verification completed. Production deployment 7gCsDfk1G6ip29c2mui3CY5Gurs3 is Ready (29 seconds), application source b891e65, alias puente-core-week12.vercel.app. Browser checks confirmed /campana redirects to /campana/index.html, Spanish UI, +MXN240 provisional example, carousel progression, Spanish pilot download and home-page campaign navigation. Earlier approval and identity blocks are resolved. No audience tests, institutional interview, outreach, funding or audience metrics are claimed.
