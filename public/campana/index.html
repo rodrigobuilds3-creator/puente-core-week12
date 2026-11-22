@@ -4,7 +4,7 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="PUENTE: un ejemplo de 14 días para revisar gastos y datos faltantes antes de una transición laboral.">
   <title>PUENTE · Antes del primer pago</title>
-  <link rel="stylesheet" href="styles.css"><script src="assets/method-example.js" defer></script><script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css"><script src="assets/method-example.js" defer></script><script src="assets/campaign-copy.js" defer></script><script src="app.js" defer></script>
 </head>
 <body>
   <a href="#main" class="skip" data-i18n="skip">Ir al contenido</a>
@@ -19,7 +19,7 @@
         <h1 data-i18n="heroTitle">El primer pago no llega hoy.</h1>
         <p class="lead" data-i18n="heroLead">Antes de cambiar de trabajo, revisa qué gastos tendrías que cubrir y qué información falta confirmar.</p>
         <div class="actions"><a class="button blue" href="#example" data-i18n="heroAction">Ver un ejemplo</a><a class="text-link" href="#institutions" data-i18n="heroPartner">Explorar el piloto institucional</a></div>
-        <p class="small boundary" data-i18n="heroBoundary">El demo usa datos ficticios y una cuenta de 14 días. No verifica ofertas ni garantiza ingresos.</p>
+        <p class="small boundary" data-i18n="heroBoundary">Esta versión de prueba usa datos ficticios. Revisa 14 días; no promete que te paguen en ese plazo. No verifica el trabajo ni te dice si aceptar.</p>
       </div>
       <div class="hero-ledger" aria-labelledby="ledger-heading">
         <div class="ledger-top"><span class="eyebrow" data-i18n="fictional">EJEMPLO FICTICIO</span><span class="day-tag" data-i18n="horizon">14 DÍAS</span></div>
@@ -30,7 +30,7 @@
           <div><dt data-i18n="protected">Gastos protegidos y reserva</dt><dd>− MXN 2,610</dd></div>
         </dl>
         <div class="shortfall"><p data-i18n="shortfallLabel">En esta estimación faltan</p><strong>MXN 1,260</strong></div>
-        <p class="small" data-i18n="ledgerNote">El ingreso conservado del ejemplo es MXN 0. Un sueldo futuro no se suma como dinero disponible.</p>
+        <p class="small" data-i18n="ledgerNote">En este ejemplo no se conserva dinero del trabajo por cuenta propia: MXN 0. Un sueldo futuro no es efectivo disponible hoy.</p>
       </div>
     </section>
 
@@ -43,58 +43,59 @@
               <label><input type="radio" name="case" value="0" checked><span><b data-i18n="caseA">Ejemplo A</b><small data-i18n="caseANote">MXN 1,800 de efectivo</small></span></label>
               <label><input type="radio" name="case" value="1"><span><b data-i18n="caseB">Ejemplo B</b><small data-i18n="caseBNote">MXN 3,300 de efectivo</small></span></label>
             </fieldset>
-            <p class="small" data-i18n="methodRule">La reserva es el menor neto diario positivo del registro ficticio: MXN 210. Se aparta una sola vez.</p>
+            <p class="small" data-i18n="methodRule">Del efectivo del ejemplo se apartan MXN 210 como reserva, una sola vez. No es un ahorro adicional que ya tengas ni una ayuda económica.</p>
             <a class="text-link" href="assets/ejemplos-metodo.json" download>Descargar entradas y resultados</a>
           </div>
           <div class="example-result" aria-live="polite" aria-atomic="true">
             <p id="case-state" class="result-state">Cargando ejemplo…</p>
-            <p class="result-number" id="case-margin">—</p>
+            <p class="small">EJEMPLO FICTICIO · CUENTA DE 14 DÍAS</p><p class="result-number" id="case-margin">—</p>
             <p id="case-equation" class="equation"></p>
             <p id="case-explanation"></p>
-            <p class="small" data-i18n="firstPayBoundary">La fecha del primer pago se confirma fuera del demo. Si llega después de 14 días, esta cuenta no cubre toda la espera.</p>
+            <p class="small" data-i18n="firstPayBoundary">Confirma con la empresa cuándo sería el primer pago. Los 14 días son el plazo de esta cuenta, no una fecha de pago prometida. Si tarda más, la cuenta no cubre toda la espera.</p>
           </div>
         </div>
-        <a class="button navy" href="https://puente-core-week12.vercel.app/#calculadora" target="_blank" rel="noopener" data-i18n="openDemo">Abrir el demo existente con datos ficticios</a>
+        <a class="button navy" href="https://puente-core-week12.vercel.app/#calculadora" target="_blank" rel="noopener" data-i18n="openDemo">Practicar con datos ficticios</a>
       </div>
     </section>
 
     <section id="materials" class="wrap materials-section">
-      <div class="section-intro"><p class="eyebrow">TRES SERIES PARA EL MOMENTO DE DECIDIR</p><h2>Información que sirve antes del sí.</h2><p>Materiales para revisar los gastos, reconocer lo que falta confirmar y conservar el control de tu decisión. Su comprensión con la audiencia todavía está por probarse.</p></div>
+      <div class="section-intro"><p class="eyebrow">TRES SERIES PARA EL MOMENTO DE DECIDIR</p><h2>Información que sirve antes del sí.</h2><p>Materiales para revisar gastos y reconocer lo que falta confirmar. Puedes leer el carrusel como texto si la imagen se ve pequeña en tu pantalla.</p></div>
       <div class="materials-grid">
         <article class="carousel-piece">
           <div class="piece-heading"><h3 data-i18n="series1">Antes de aceptar</h3><span class="format" data-i18n="formatCarousel">CARRUSEL · 4 LÁMINAS</span></div>
           <img id="carousel-image" src="assets/c1-1.png" width="1080" height="1350" alt="Primera lámina: antes de aceptar, pregunta cuándo te pagarían.">
           <div class="carousel-controls"><button id="previous" type="button" disabled data-i18n="previous">Anterior</button><span id="slide-label" aria-live="polite">1 / 4</span><button id="next" type="button" data-i18n="next">Siguiente</button></div>
           <a class="text-link" href="downloads/C1_ANTES_DE_ACEPTAR_ES.pdf" download data-i18n="downloadCarousel">Descargar carrusel PDF</a>
+          <details class="readable-piece"><summary>Leer esta lámina como texto</summary><div aria-live="polite"><h4 id="carousel-text-title"></h4><p id="carousel-text-body"></p><p id="carousel-text-note"></p></div></details>
         </article>
         <div class="other-pieces">
           <article><div class="piece-heading"><h3 data-i18n="series2">Hasta que te paguen</h3><span class="format" data-i18n="formatWorksheet">HOJA DE EJERCICIO</span></div><a href="downloads/C2_HASTA_EL_PRIMER_PAGO_ES.pdf" download><img src="assets/c2-1.png" width="1080" height="1350" loading="lazy" alt="Hoja de ejercicio ficticio de 14 días: el faltante es de 1,260 pesos."></a><a class="text-link" href="downloads/C2_HASTA_EL_PRIMER_PAGO_ES.pdf" download data-i18n="downloadWorksheet">Descargar hoja PDF</a></article>
-          <article><div class="piece-heading"><h3 data-i18n="series3">Lo que falta confirmar</h3><span class="format" data-i18n="formatPoster">PÓSTER</span></div><a href="downloads/C3_LO_QUE_FALTA_CONFIRMAR_ES.pdf" download><img src="assets/c3-1.png" width="1080" height="1350" loading="lazy" alt="Póster: un margen positivo de 240 pesos no verifica una oferta."></a><a class="text-link" href="downloads/C3_LO_QUE_FALTA_CONFIRMAR_ES.pdf" download data-i18n="downloadPoster">Descargar póster PDF</a></article>
+          <article><div class="piece-heading"><h3 data-i18n="series3">Lo que falta confirmar</h3><span class="format" data-i18n="formatPoster">PÓSTER</span></div><a href="downloads/C3_LO_QUE_FALTA_CONFIRMAR_ES.pdf" download><img src="assets/c3-1.png" width="1080" height="1350" loading="lazy" alt="Póster: ejemplo ficticio de 240 pesos de margen en 14 días; falta confirmar el trabajo con la empresa."></a><a class="text-link" href="downloads/C3_LO_QUE_FALTA_CONFIRMAR_ES.pdf" download data-i18n="downloadPoster">Descargar póster PDF</a></article>
         </div>
       </div>
       <details class="sketches"><summary data-i18n="sketchTitle">Los otros tres conceptos, en boceto</summary><ul><li data-i18n="sketch1">Antes de aceptar: una lista de costos de empezar que debes confirmar.</li><li data-i18n="sketch2">Hasta que te paguen: comparar sueldo mensual y efectivo disponible hoy.</li><li data-i18n="sketch3">Lo que falta confirmar: una secuencia de preguntas, fuente y fecha.</li></ul></details>
     </section>
 
-    <section id="institutions" class="partner-section"><div class="wrap">
+    <section id="institutions" class="partner-section"><div class="wrap"><p class="audience-transition">Para que el acceso siga siendo gratuito para la persona trabajadora, exploramos que una institución financie el acompañamiento. No significa entregar dinero al trabajador. Esta sección explica esa propuesta.</p>
       <div class="section-intro"><p class="eyebrow" data-i18n="partnerKicker">PARA ORGANIZACIONES Y DEPENDENCIAS PÚBLICAS</p><h2 data-i18n="partnerTitle">Financiar acceso no compra una decisión.</h2><p data-i18n="partnerLead">Exploramos un piloto de acompañamiento, gratuito para el trabajador. Buscamos entender el problema que ya atiendes y si este servicio tendría valor para tu institución.</p></div>
       <div class="pilot-layout"><div>
-        <p class="pilot-size" data-i18n="pilotSize">20 personas. Un mes.</p>
-        <p data-i18n="pilotScope">Un punto de partida para discutir alcance, responsable operativo, apoyo y evaluación agregada. Son supuestos; no un programa aprobado.</p>
+        <p class="pilot-size" data-i18n="pilotSize">20 personas. Una sesión grupal.</p>
+        <p data-i18n="pilotScope">Una hora de orientación para un grupo existente. Fechas, responsable, apoyo y evaluación por acordar. El costo base incluye un mes de infraestructura; no incluye apoyo individual ni seguimiento a tres meses.</p>
         <p class="pilot-price">MXN 2,800 <span data-i18n="pilotPriceNote">antes de impuestos · ejemplo de cotización</span></p>
-        <p class="small" data-i18n="pilotCosts">Costo supuesto: MXN 2,240. El margen objetivo de 20% no es utilidad neta. Más tiempo de captación o apoyo cambia la cotización.</p>
+        <p class="small" data-i18n="pilotCosts">Costo listado supuesto: MXN 1,760 por 13 horas de trabajo e infraestructura. La referencia de MXN 2,800 deja MXN 1,040 antes de otros gastos e impuestos; no es utilidad neta. Más apoyo, gestión o meses cambian el costo.</p>
       </div><div class="pilot-conditions">
         <h3 data-i18n="conditionsTitle">Las condiciones del piloto</h3>
-        <ul><li data-i18n="condition1">El patrocinio no cambia cálculos ni oculta advertencias.</li><li data-i18n="condition2">La persona puede rechazar cualquier oportunidad.</li><li data-i18n="condition3">No se entregan registros financieros identificables por defecto.</li><li data-i18n="condition4">No hay empleo, apoyo económico ni financiación garantizados.</li></ul>
+        <ul><li data-i18n="condition1">Quien financia el servicio no cambia cálculos ni oculta advertencias.</li><li data-i18n="condition2">La persona puede rechazar cualquier oportunidad.</li><li data-i18n="condition3">No se entregan registros financieros identificables por defecto.</li><li data-i18n="condition4">No hay empleo, apoyo económico ni financiación garantizados.</li></ul>
       </div></div>
       <div class="actions"><a class="button yellow" href="downloads/PUENTE_PROPUESTA_PILOTO_ES.pdf" download>Descargar propuesta del piloto</a><a class="text-link" href="https://puente-core-week12.vercel.app/pricing" target="_blank" rel="noopener">Revisar el simulador existente</a></div>
-      <div class="outreach"><h3>Qué revisar con tu institución</h3><p>Antes de comprometer recursos, acuerden a quién atenderían, quién acompañaría al grupo, cuánto apoyo necesitaría y quién puede aprobar el presupuesto. La propuesta sirve para iniciar esa conversación.</p></div>
+      <div class="outreach"><h3>Qué revisar con tu institución</h3><p>Antes de comprometer recursos, confirmen quién aprueba el presupuesto, quién opera, la facturación, los plazos de pago y el reporte agregado. La facturación y la contratación siguen por resolver; no hay una compra aprobada.</p></div>
     </div></section>
 
     <section id="evidence" class="wrap evidence-section"><div class="section-intro"><p class="eyebrow">ALCANCE Y LÍMITES</p><h2>Una cuenta explicable. Una decisión tuya.</h2></div>
-      <div class="evidence-columns"><div><h3>Lo que puedes revisar</h3><p>Dos ejemplos ficticios, el detalle de sus cuentas y las condiciones de un posible piloto institucional. El resultado deja visibles los gastos y la información faltante.</p></div><div><h3>Lo que aún no sabemos</h3><p>Todavía necesitamos probar la comprensión de los materiales con la audiencia y validar el alcance y el presupuesto con una institución. No hay financiamiento confirmado.</p></div></div>
+      <div class="evidence-columns"><div><h3>Lo que puedes revisar</h3><p>Dos ejemplos ficticios, el detalle de sus cuentas y las condiciones de un posible piloto institucional. El resultado deja visibles los gastos y la información faltante.</p></div><div><h3>Lo que aún no sabemos</h3><p>Esta revisión todavía necesita una nueva prueba de comprensión. También falta validar el alcance con quien pueda autorizar el presupuesto institucional. No hay financiamiento confirmado.</p></div></div>
       <p class="small">La publicación de esta página no demuestra resultados de empleo, ahorro ni una mejora de 10:1. No ingreses datos financieros reales en los ejemplos.</p>
     </section>
   </main>
-  <footer class="wrap footer"><a class="logo" href="#">puente<span>.</span></a><p>Prototipo con datos ficticios. La decisión sigue siendo tuya.</p><span>SEMANA 15 · 2026</span></footer>
+  <footer class="wrap footer"><a class="logo" href="#">puente<span>.</span></a><p>Versión de prueba con datos ficticios. La decisión sigue siendo tuya.</p><span>SEMANA 15 · 2026</span></footer>
 </body>
 </html>
