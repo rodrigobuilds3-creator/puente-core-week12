@@ -57,3 +57,5 @@ The candidate passes all three checks in a local Chrome component harness and al
 ### Week 16 defense and recording material
 
 Added a five-section defense ahead of the existing cost memo on /about. The worker offer stays free and the group proposal uses MXN 2,800 before tax as a discussion reference. A coordinator provided operating conditions in Week 15. Approval from the budget holder remains open. Preserve the memo's older fictional cost model as a comparison and keep missing-scenario errors explicit. The demo guide contains a 3:00 walkthrough and a 0:30 personal reflection prompt. The fresh-chat persona protocol specifies the screen order and records first answers before prompts about the job.
+
+The complete local production build and integrated-browser retest passed for app source 872d181. The case with MXN 240 remains provisional and the next action is visible with the focus on the result. The next release step is an evaluator-accessible preview of this branch. The production URL still serves the Week 15 baseline. Preserve the exact visual Persona exchange and record the demo against the verified release.
