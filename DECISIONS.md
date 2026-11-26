@@ -45,3 +45,11 @@ Rodrigo explicitly authorized the GitHub push and Vercel release. Branch codex/p
 
 The earlier session-close publication-pending statement is superseded. Complete release IDs, test details and remaining evidence are recorded in docs/DEPLOYMENTS_WEEK14.md. Next action: obtain a real sponsor conversation when a contact exists, perform independent fresh visual PERSONA, preserve actual full chat exports and record videos. Domain-owning requirement still needs clarification; do not claim a custom domain. Successful release does not prove demand or 10:1.
 
+
+## Week 16 session start · 26 November 2026
+
+Continue the existing PUENTE venture on the Week 16 hardening branch. The pre-code packet is commit 03c597b. The Week 15 published baseline reproduces an issue on a 390 × 844 viewport: the calculator updates, but the immediate action is below the first view and keyboard focus stays on the button. Freeze the existing figures, evidence rules and saving behavior. Move the next step directly beneath the result heading, name the first-pay question for the provisional case and focus the result after Calculate. Keep the database and campaign release untouched.
+
+The Week 15 numerical builder accepted a private copy with a false authored claim about first-pay verification. Preserve its arithmetic checks and add an explicit editorial stop rule tied to source evidence. The modified wording stayed private. Results and limits are in the existing test log.
+
+The candidate passes all three checks in a local Chrome component harness and all 28 existing automated tests. Next move: complete the five-part /about defense, verify the full Next.js build, run the fresh-chat synthetic persona against actual screens, then verify an evaluator-accessible release and capture the original conversation and demo. The earlier real audience feedback remains evidence of their Week 15 experience only. At scale, an unclear projection can cost someone paid hours. Preserve their choice, surface what needs employer confirmation and keep sponsor funding independent of the result.

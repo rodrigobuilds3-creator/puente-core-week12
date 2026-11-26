@@ -35,3 +35,34 @@ On 1 November a dedicated project quoted at $0 per month was created with the ac
 - The public URL was opened in a separate browser session. PUENTE's landing page and calculator loaded, and the fictional-data notice was visible. No personal financial data was entered.
 - The final demo file is 3:39 in 1920 × 1080 and contains a separate audio track. The voice is synthetic and the demonstration figures remain fictional.
 - The free Vercel hostname is live. A venture-owned custom domain has not been connected; verify whether the instructor accepts the Vercel hostname before treating the domain condition as complete.
+
+## Week 16 hardening checks
+
+26 November 2026 · Start from Week 15, commit 51aa7c3. Browser: Chrome. Data: invented fixtures only. Device constraint: emulated 390 × 844 CSS-pixel viewport, not a physical phone.
+
+| Check | Expected | Published baseline observed |
+| --- | --- | --- |
+| Core task | Sample A returns a shortfall of MXN 1,260. Changing only cash to MXN 3,300 returns a margin of MXN 240 and leaves the result provisional. | Passed both cases. |
+| Safe failure | Clear cash and calculate. Result stays incomplete with no visible margin, save or download. | Passed. Save and download controls were absent. |
+| Mobile and keyboard | The immediate step is visible without another scroll after Calculate and keyboard focus reaches the result. No horizontal overflow. | Failed for the step and focus. In the positive case the result heading began at y=605, the margin at y=920 and the next-step box at y=1,367. Focus stayed on the button. Document scroll width 381 px. |
+
+### Week 15 creative process safe failure
+
+- Expected: withhold any draft claiming the sample confirms the first payday. The synthetic engine fixture has no first-pay-date input and the positive result is provisional.
+- Baseline numerical and rendering steps: injected one unsupported assertion into slide C1.3 in a private copy, ran the original numerical builder and generated the assets privately. All eight numerical checks passed. The assertion reached both the PDF and readable carousel. The figures gate does not verify authored language. No test asset was published.
+- Editorial process response: use the following stop rule before rendering release assets or handing off a candidate for publication. Read the proposed claim as a standalone assertion, identify its evidence in the method output, and check whether a reader could interpret it as a confirmed date, verification, guaranteed outcome, funding or measured savings. Hold any claim without backing and record the correction. Treat direct verification of a payday as unsupported whenever the method has no first-pay-date input.
+- Same-input retest at the editorial gate: first-pay assertion held because firstPayDateInputSupported is false and the synthetic status is PROVISIONAL. Supported replacement: “La cuenta cubre 14 días. Confirma con la empresa cuándo recibirías el primer pago.” Accepted for this claim check as a time horizon plus an independent action. This was an offline, operator-run editorial check. It does not test publication automation.
+
+### Candidate verification
+
+- Existing automated suite: 28 passed. Includes missing and stale evidence, blank input, shortfall precedence, opt-in event validation and browser-local scenario invariants.
+- Retested in a fresh Chrome tab at 390 × 844 CSS px. A local React bundle ran the exact candidate Home component, its handwritten styles and the app's built-in fictional fallback. This component check did not exercise the Next.js server, Tailwind processing, the Supabase route or an external release.
+
+| Candidate check | Observed | Result |
+| --- | --- | --- |
+| Core task | Sample A returned −MXN 1,260. Changing only cash to MXN 3,300 returned +MXN 240 and “La oportunidad sigue sin confirmar.” | Pass |
+| Safe failure | Clearing cash and pressing Enter showed the incomplete heading. There was no margin and no save or download control. | Pass |
+| Mobile and keyboard | Pressing Enter focused the result heading. The full provisional action box appeared at y=666–781, before the margin (y=1,013). The shortfall action was also visible at y=691–805. No horizontal overflow (381 px). | Pass |
+
+- The full Next.js build and deployment have not been verified. The Chrome result is technical evidence for the component at the tested breakpoint. It does not establish screen-reader behavior or worker comprehension.
+- Fresh-browser visual persona and uncoached worker retest are pending. Prior results do not demonstrate how workers will interpret the revised flow.
