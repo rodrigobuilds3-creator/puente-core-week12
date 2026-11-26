@@ -66,3 +66,9 @@ On 1 November a dedicated project quoted at $0 per month was created with the ac
 
 - The full Next.js build and deployment have not been verified. The Chrome result is technical evidence for the component at the tested breakpoint. It does not establish screen-reader behavior or worker comprehension.
 - Fresh-browser visual persona and uncoached worker retest are pending. Prior results do not demonstrate how workers will interpret the revised flow.
+
+### Week 16 defense and memo
+
+- Chrome local component check: /about rendered the five defense headings in order. At 390 CSS pixels, document width was 375 pixels and the memo link reached its target. The default fictional memo retained MXN 2,980 resource cost and 1.68:1. A missing scenario produced the explicit error with no substituted memo. The check used the actual React About component and handwritten styles.
+- Strict TypeScript check passed for the changed calculator and About components and their imported code using TypeScript 5.9.3 with the locked React types. The complete 28-test suite passed again.
+- The small source scan found no tracked environment files or matches for selected common secret patterns in app, lib and public. The example route reads one synthetic fixture server-side, validates it with the engine and returns a fallback signal if unavailable. The checked SQL describes the existing read-only row policy. The live database and browser bundles were outside this source review.

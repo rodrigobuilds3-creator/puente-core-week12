@@ -160,8 +160,8 @@ h1 span { color:var(--blue); }
 .memo-toolbar { display:flex; gap:20px; flex-wrap:wrap; align-items:center; margin:20px 0 25px; font-size:13px; }
 .memo-toolbar button { border:1px solid #bed0ed; background:white; border-radius:5px; padding:12px 16px; font-weight:700; color:#244cc0; }
 .memo-sheet { background:white; padding:40px; border:1px solid #d7e1ef; border-radius:10px; }
-.memo-sheet h1 { font-size:36px; margin:15px 0; }
-.memo-sheet h2 { font-size:17px; margin:23px 0 10px; }
+.memo-sheet .memo-title { font-size:36px; letter-spacing:-.04em; line-height:1.1; margin:15px 0; }
+.memo-sheet h3 { font-size:17px; margin:23px 0 10px; }
 .memo-sheet p { font-size:13px; color:#405675; }
 .memo-sheet .sponsor-totals>div { font-size:13px; }
 .memo-sheet .memo-verdict { padding:18px; background:#fff2cc; border-radius:7px; }
@@ -169,5 +169,20 @@ h1 span { color:var(--blue); }
 .memo-sources { font-size:11px; line-height:1.8; color:#4e6380; margin-top:20px; }
 .memo-sources a { color:#244cc0; text-decoration:underline; }
 @media(max-width:850px) { .sponsor-offers { grid-template-columns:1fr; }.sponsor-offer { padding:24px; }.sponsor-workspace { grid-template-columns:1fr; }.sponsor-result { position:static; }.sponsor-nav { align-items:flex-start; }.sponsor-nav nav { gap:16px; }.sponsor-hero { padding-top:42px; }.sponsor-hero h1 { font-size:48px; } }
-@media(max-width:480px) { .sponsor-nav { flex-direction:column; gap:19px; }.sponsor-nav nav { margin-left:0; gap:13px; font-size:11px; }.sponsor-fields { grid-template-columns:1fr; }.sponsor-group,.sponsor-result,.sponsor-storage { padding:20px; }.sponsor-hero h1 { font-size:39px; }.sponsor-hero>p { font-size:15px; }.quote-total { font-size:37px; }.sponsor-totals dd { flex-shrink:1; overflow-wrap:anywhere; }.sponsor-totals dt { min-width:0; }.sponsor-independence { padding:24px; }.memo-sheet { padding:24px; }.memo-sheet h1 { font-size:29px; }.sponsor-actions { align-items:stretch; flex-direction:column; } }
-@media print { @page { size:letter; margin:12mm; } .sponsor-nav,.sponsor-footer,.memo-toolbar,.memo-sources { display:none!important; }.sponsor-shell,.sponsor-shell main { background:white; padding:0; max-width:none; }.memo-wrap { padding:0; max-width:none; }.memo-sheet { border:0; padding:0; border-radius:0; }.memo-sheet h1 { font-size:23px; margin:8px 0; }.memo-sheet h2 { font-size:12px; margin:13px 0 5px; }.memo-sheet p,.memo-sheet .sponsor-totals>div { font-size:9px; line-height:1.4; }.memo-sheet .sponsor-totals { margin:10px 0; }.memo-sheet .sponsor-totals>div { padding:5px 0; }.memo-sheet .memo-verdict { padding:10px; }.memo-sheet .memo-verdict strong { font-size:18px; }.memo-sheet .sponsor-kicker,.memo-sheet .sponsor-fine { font-size:8px; }.memo-sheet h2 { break-after:avoid; } }
+@media(max-width:480px) { .sponsor-nav { flex-direction:column; gap:19px; }.sponsor-nav nav { margin-left:0; gap:13px; font-size:11px; }.sponsor-fields { grid-template-columns:1fr; }.sponsor-group,.sponsor-result,.sponsor-storage { padding:20px; }.sponsor-hero h1 { font-size:39px; }.sponsor-hero>p { font-size:15px; }.quote-total { font-size:37px; }.sponsor-totals dd { flex-shrink:1; overflow-wrap:anywhere; }.sponsor-totals dt { min-width:0; }.sponsor-independence { padding:24px; }.memo-sheet { padding:24px; }.memo-sheet .memo-title { font-size:29px; }.sponsor-actions { align-items:stretch; flex-direction:column; } }
+@media print { @page { size:letter; margin:12mm; } .sponsor-nav,.sponsor-footer,.defense-deck,.memo-toolbar,.memo-sources { display:none!important; }.sponsor-shell,.sponsor-shell main { background:white; padding:0; max-width:none; }.memo-wrap { padding:0; max-width:none; }.memo-sheet { border:0; padding:0; border-radius:0; }.memo-sheet .memo-title { font-size:23px; margin:8px 0; }.memo-sheet h3 { font-size:12px; margin:13px 0 5px; }.memo-sheet p,.memo-sheet .sponsor-totals>div { font-size:9px; line-height:1.4; }.memo-sheet .sponsor-totals { margin:10px 0; }.memo-sheet .sponsor-totals>div { padding:5px 0; }.memo-sheet .memo-verdict { padding:10px; }.memo-sheet .memo-verdict strong { font-size:18px; }.memo-sheet .sponsor-kicker,.memo-sheet .sponsor-fine { font-size:8px; }.memo-sheet h3 { break-after:avoid; } }
+
+.defense-deck { margin-bottom:40px; }
+.defense-deck header { padding:28px 34px; border-radius:12px 12px 0 0; background:#102753; color:#fff; }
+.defense-deck header .sponsor-kicker { color:#ffe081; }
+.defense-deck h1 { margin:10px 0 0; font-size:clamp(34px,5vw,54px); }
+.defense-slides { margin:0; padding:0; list-style:none; border:1px solid #d7e1ef; border-top:0; border-radius:0 0 12px 12px; background:white; }
+.defense-slides li { padding:24px 34px; }
+.defense-slides li + li { border-top:1px solid #d7e1ef; }
+.defense-slides h2 { margin:0 0 6px; font-size:20px; }
+.defense-slides p { margin:0; color:#405675; }
+.defense-slides a { display:inline-block; margin-top:10px; color:#244cc0; font-weight:700; text-decoration:underline; text-underline-offset:3px; }
+#memo { scroll-margin-top:24px; }
+@media (max-width:480px) {
+  .defense-deck header,.defense-slides li { padding:20px; }
+}

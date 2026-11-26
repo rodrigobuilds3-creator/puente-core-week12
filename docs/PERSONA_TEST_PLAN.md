@@ -18,3 +18,15 @@ The persona received four actual mobile screenshots in order: landing page, star
 ## Retest record and limits
 
 The corrected flow was checked on the published app with the fictional example. Its result remained a -MXN 1,260 margin, the new status explained the cash constraint, and the example confirmation appeared beside its control. The 13 automated tests passed. The assistant performed this retest; it was not a second independent participant test. One synthetic persona and four screenshots do not establish demand, accessibility for all users, employment outcomes or a 10:1 advantage.
+
+## Week 16 fresh-chat visual session
+
+Prepare real mobile captures from the revised release. Open a fresh chat with the fictional profile below and attach one screenshot per prompt. Retain the original replies verbatim and record observed confusion, the design response and any retest. This section specifies the exercise. It does not record results.
+
+Profile for simulation: Luis sells and delivers goods in Mexico City, earns irregular cash and is considering a different job. He has a paid shift he can keep, little spare time and his phone. Two anonymous Week 15 observations ground the task: the 14-day window can be confused with the first-pay date, and someone may expect the tool to choose whether to accept. Treat those as research context for the moderator. Let Luis answer without being taught the expected interpretation.
+
+1. Open with the calculator and its demo notice. Ask: “¿Qué crees que puedes hacer aquí? ¿Qué tocarías primero?” Record what the person thinks the data represent.
+2. Show the loaded example and the provisional result at the moment after Calculate. Ask: “¿Qué entiendes de esta pantalla? ¿Qué harías ahora?” Record the first answer before showing the breakdown or asking about the paid shift.
+3. Reveal the visible breakdown. Ask: “¿A qué periodo se refiere el monto? ¿Qué te falta saber y de quién lo obtendrías? ¿Qué harías con el turno que ya tienes?” Keep answers after this prompt distinct from the unaided first answer.
+4. Show the actual screen with the cash field cleared. Ask: “¿Qué pasó y cómo volverías a intentarlo?”
+5. Record whether the screens communicated the fictional inputs, the provisional status, the payroll action and the fall-back. A synthetic reaction is a design signal. Three uncoached sessions with appropriate workers remain the human test.
